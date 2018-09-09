@@ -1,0 +1,29 @@
+{
+  "name": "@peacefultruth/freestyle",
+  "version": "36.0.0",
+  "main": "dist/freestyle.js",
+  "author": "Peaceful Truth <truthpeaceful@gmail.com>",
+  "license": "MIT",
+  "repository": "github:peacefultruth/freestyle",
+  "scripts": {
+    "es6": "babel-node --",
+    "test": "NODE_ENV='test' jest",
+    "test:debug:wait": "NODE_ENV='test' node --inspect-brk node_modules/.bin/jest --runInBand",
+    "lib": "babel src --source-maps inline --out-dir lib --ignore '**/?(*.)+(spec|test|unit).js?(x)'",
+    "dist": "babel src --out-dir dist --ignore '**/?(*.)+(spec|test|unit)?(.*).js?(x)'"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-minify": "^0.4.3",
+    "jest": "^23.5.0"
+  },
+  "dependencies": {
+    "dlv": "^1.1.2"
+  }
+}
