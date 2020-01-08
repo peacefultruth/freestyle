@@ -1,7 +1,7 @@
 # freestyle
 
 ```bash
-yarn install freestyle
+yarn install @peacefultruth/freestyle
 ````
 
 ```js
@@ -29,4 +29,39 @@ const answers = freestyle(microphone, `
 
 expect(answers).toEqual('as I get older');
 
+```
+
+============================================
+
+```
+expect(
+  freestyle.shakur(
+    {
+      reference: (
+        {
+          my_value: {
+            important: (
+              (
+                my_value
+              ) => (
+                `my value is: ${my_value}`
+              )
+            ),
+          },
+        }
+      ),
+      category: (
+        '#my-value #important'
+      ),
+    }
+  )
+).toEqual(
+  {
+    locations: (
+      [
+        ['my_value', 'important'],
+      ]
+    ),
+  }
+);
 ```

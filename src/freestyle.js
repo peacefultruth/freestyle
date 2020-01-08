@@ -1,6 +1,8 @@
 
 import delve from 'dlv';
 
+import shakur from './shakur';
+
 const nesting = {
   freestyle_keys: ':;?!,',
   impl_key: '.',
@@ -59,4 +61,5 @@ export default Object.assign(tupac, {
   rakim,
   krsone,
   icecube,
+  shakur,
 });

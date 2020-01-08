@@ -1,6 +1,6 @@
 {
   "name": "@peacefultruth/freestyle",
-  "version": "3.0.0",
+  "version": "20.0.0",
   "main": "dist/freestyle.js",
   "author": "Peaceful Truth <truthpeaceful@gmail.com>",
   "license": "MIT",
@@ -24,6 +24,7 @@
     "jest": "^23.5.0"
   },
   "dependencies": {
-    "dlv": "^1.1.2"
+    "dlv": "^1.1.2",
+    "traverse": "^0.6.6"
   }
 }
