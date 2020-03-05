@@ -1,14 +1,25 @@
 {
   "presets": [
-    ["env", {
-      "targets": {
-        "node": "current"
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current"
+        }
       }
-    }],
-    "minify"
+    ],
+    "@babel/preset-typescript"
   ],
+  "env": {
+    "production": {
+      "presets": [
+        "minify"
+      ]
+    }
+  },
   "plugins": [
-    "transform-class-properties",
-    "transform-object-rest-spread"
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-object-rest-spread"
   ]
 }
+

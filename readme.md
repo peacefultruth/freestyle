@@ -1,7 +1,7 @@
 # freestyle
 
 ```bash
-yarn install @peacefultruth/freestyle
+yarn add @peacefultruth/freestyle
 ````
 
 ```js
